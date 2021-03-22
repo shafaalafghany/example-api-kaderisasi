@@ -18,6 +18,6 @@ app.get('/', (req, res) => {
 const user = require('./modules/auth/auth.route')
 app.use('/api/auth', user)
 
-const PORT = process.env.PORT || 8080
+const PORT = process.env.PORT || 3000
 
 app.listen(PORT, () => console.log(`Listen to port ${PORT}`))
