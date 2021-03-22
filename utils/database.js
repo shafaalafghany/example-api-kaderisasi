@@ -8,4 +8,10 @@ const db = mysql.createPool({
     connectionLimit: 1000,
 })
 
+db.query('select 1 + 1 as result', (err) => {
+    if(err) return console.log(err)
+
+    return console.log("Connected to Database")
+})
+
 module.exports = db
